@@ -1,0 +1,55 @@
+/* Footer Styling */
+.footer-container {
+    background-color: #993939;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db; /* Change to your preferred hover color */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.social-links a svg {
+    margin-right: 0; /* No margin as there is no text */
+    display: inline-block;
+}
+
+/* Custom icon colors */
+.social-link.github:hover {
+    color: #333; /* GitHub hover color */
+}
+
+.social-link.linkedin:hover {
+    color: #0077b5; /* LinkedIn hover color */
+}
+
+.social-link.twitter:hover {
+    color: #1da1f2; /* Twitter hover color */
+}
