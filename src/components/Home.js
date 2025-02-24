@@ -20,7 +20,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>I'm Woldemichael Debesaw</h1>
+          {/* <h1>I'm Woldemichael Debesaw</h1> */}
         </div>
 
         <div className="hero-details">
@@ -29,6 +29,8 @@ const Home = () => {
             alt="Woldemichael Debesaw"
             className="profile-img"
           />
+                    <h1>I'm Woldemichael Debesaw</h1> {/* Name placed after the image */}
+
           <p>
             I am a passionate full-stack software developer building robust,
             scalable, and interactive applications. I specialize in both
@@ -36,16 +38,14 @@ const Home = () => {
             and PHP.
           </p>
           <h2>About Me</h2>
-        <p>I'm a software developer.</p>
+          <p>I'm a software developer.</p>
 
-        {/* Download My CV Button */}
-        <button onClick={handleDownload} className="download-btn">
-          Download My CV
-        </button>
+          {/* Download My CV Button */}
+          <button onClick={handleDownload} className="download-btn">
+            Download My CV
+          </button>
         </div>
       </section>
-
-    
 
       {/* Footer Section */}
       <footer>
