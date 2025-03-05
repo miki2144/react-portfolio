@@ -15,38 +15,71 @@ h1, h2 {
   color: #333;
 }
 
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.light-mode {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
 /* Hero Section */
 .hero {
-  background-color: #9aaebb; /* Hero background color */
-  color: white;
-  padding: 50px 0;
+  position: relative;
+  padding: 50px 20px;
   text-align: center;
 }
 
-.hero-content h1 {
-  font-size: 2.5rem;
+.hero-details {
+  padding: 3rem;
+  background-color: #f4f7fc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
 }
 
-/* Responsive adjustments for the hero section */
-.hero-details {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 40px;
+.hero-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
 }
 
 .profile-img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin-bottom: 20px;
   border: 5px solid white;
-  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+  transition: transform 0.3s ease-in-out;
 }
 
 .profile-img:hover {
-  transform: scale(1.1); /* Zoom effect on hover */
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 20px rgba(206, 71, 71, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px 10px;
+  }
+
+  .hero-image {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .hero-details p {
@@ -81,8 +114,8 @@ footer {
 
 .footer-content {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
@@ -91,35 +124,35 @@ footer {
   padding: 0;
   display: flex;
   gap: 15px;
-  justify-content: center; /* Center the icons */
+  justify-content: center;
 }
 
 .social-links li a {
   color: white;
-  font-size: 24px; /* Adjust size as needed */
+  font-size: 24px;
   text-decoration: none;
 }
 
 .social-links li a:hover {
-  color: #007bff; /* Change color on hover */
+  color: #007bff;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2rem; /* Adjust font size for smaller screens */
+    font-size: 2rem;
   }
 
   .profile-img {
-    width: 120px; /* Smaller image for mobile */
-    height: 120px; /* Maintain aspect ratio */
+    width: 120px;
+    height: 120px;
   }
 
   .hero-details p {
-    font-size: 1rem; /* Smaller text on mobile */
+    font-size: 1rem;
   }
 
   .download-btn {
-    padding: 10px 15px; /* Slightly smaller button */
+    padding: 10px 15px;
   }
 }

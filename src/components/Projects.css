@@ -125,6 +125,12 @@
     color: #666;
     cursor: not-allowed;
   }
+  .project-image {
+    width: 100%; /* Ensures the image takes the full width of the card */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 12px; /* Space between image and text */
+  }
   
   .unclickable:hover {
     background-color: #ccc;
